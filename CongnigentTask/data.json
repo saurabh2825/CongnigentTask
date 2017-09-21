@@ -1,0 +1,379 @@
+{
+    "IncidentType":{
+        "IncidentTypeHeaderAttribute":{
+            "HeaderLabel":"Interaction Type"
+        },
+        "Interaction Type":[
+                            {
+                            "fieldName":"Type",
+                            "fieldType":"PICKLIST",
+                            "required":"false",
+                            "length":"",
+                            "format":"",
+                            "defaultValue":"",
+                            "isReadOnly":"false",
+                            "isVisible":"true"
+                            
+                            },
+                            {
+                            "fieldName":"Type of Product Complaint",
+                            "fieldType":"PICKLIST",
+                            "required":"false",
+                            "length":"",
+                            "format":"",
+                            "defaultValue":"",
+                            "isReadOnly":"false",
+                            "isVisible":"true",
+                            "dropdownLOV":[
+                                           {
+                                           "name":"--None--",
+                                           "value":""
+                                           },
+                                           {
+                                           "name":"Medical Device Complaint",
+                                           "value":"Medical Device Complaint"
+                                           },
+                                           {
+                                           "name":"Product Quality Complaint",
+                                           "value":"Product Quality Complaint"
+                                           }
+                                           ]
+                            
+                            },
+                            {
+                            "fieldName":"Incident Origin",
+                            "fieldType":"PICKLIST",
+                            "required":"false",
+                            "length":"",
+                            "format":"",
+                            "defaultValue":"",
+                            "isReadOnly":"false",
+                            "isVisible":"true",
+                            "dropdownLOV":[
+                                           {
+                                           "name":"--None--",
+                                           "value":""
+                                           },
+                                           {
+                                           "name":"Email",
+                                           "value":"Email"
+                                           },
+                                           {
+                                           "name":"Phone",
+                                           "value":"Phone"
+                                           },
+                                           {
+                                           "name":"Web",
+                                           "value":"Web"
+                                           }
+                                           ]
+                            }
+                            ],
+        "CallerInformationHeaderAttribute":{
+            "HeaderLabel":"Caller Information"
+        },
+        "Caller Information":[
+                              {
+                              "fieldName":"Account Name",
+                              "fieldType":"REFERENCE",
+                              "required":"false",
+                              "length":"",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true"
+                              },
+                              {
+                              "fieldName":"Contact Name",
+                              "fieldType":"REFERENCE",
+                              "required":"false",
+                              "length":"",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true"
+                              },
+                              {
+                              "fieldName":"Secondary Account",
+                              "fieldType":"REFERENCE",
+                              "required":"false",
+                              "length":"",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true"
+                              },
+                              {
+                              "fieldName":"Reporter Title",
+                              "fieldType":"PICKLIST",
+                              "required":"false",
+                              "length":"",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "dropdownLOV":[
+                                             {
+                                             "name":"--None--",
+                                             "value":""
+                                             },
+                                             {
+                                             "name":"Dr.",
+                                             "value":"Dr."
+                                             },
+                                             {
+                                             "name":"Mr.",
+                                             "value":"Mr."
+                                             },
+                                             {
+                                             "name":"Mrs.",
+                                             "value":"Mrs."
+                                             },
+                                             {
+                                             "name":"Ms.",
+                                             "value":"Ms."
+                                             },
+                                             {
+                                             "name":"Prof.",
+                                             "value":"Prof."
+                                             }
+                                             ],
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter First Name",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Middle Name",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Last Name",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Street",
+                              "fieldType":"TEXTAREA",
+                              "required":"false",
+                              "length":"255",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Email",
+                              "fieldType":"EMAIL",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter City",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              
+                              },
+                              {
+                              "fieldName":"Reporter Phone No",
+                              "fieldType":"PHONE",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter State",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Occupation",
+                              "fieldType":"PICKLIST",
+                              "required":"false",
+                              "length":"",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "dropdownLOV":[
+                                             {
+                                             "name":"--None--",
+                                             "value":""
+                                             },
+                                             {
+                                             "name":"None",
+                                             "value":"None"
+                                             },
+                                             {
+                                             "name":"Physician",
+                                             "value":"Physician"
+                                             },
+                                             {
+                                             "name":"Pharmacist",
+                                             "value":"Pharmacist"
+                                             },
+                                             {
+                                             "name":"Nurse Practitioner",
+                                             "value":"Nurse Practitioner"
+                                             },
+                                             {
+                                             "name":"Nurse",
+                                             "value":"Nurse"
+                                             },
+                                             {
+                                             "name":"Dentist",
+                                             "value":"Dentist"
+                                             },
+                                             {
+                                             "name":"Physician Assistant",
+                                             "value":"Physician Assistant"
+                                             },
+                                             {
+                                             "name":"Other Healthcare Professional",
+                                             "value":"Other Healthcare Professional"
+                                             },
+                                             {
+                                             "name":"Audiologist",
+                                             "value":"Audiologist"
+                                             },
+                                             {
+                                             "name":"Biomedical Engineer",
+                                             "value":"Biomedical Engineer"
+                                             },
+                                             {
+                                             "name":"Administrator/Supervisor",
+                                             "value":"Administrator/Supervisor"
+                                             },
+                                             {
+                                             "name":"Other Healthcare",
+                                             "value":"Other Healthcare"
+                                             }
+                                             ],
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Zip Code",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"20",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              
+                              },
+                              {
+                              "fieldName":"Reporter Fax",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"20",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Reporter Country",
+                              "fieldType":"STRING",
+                              "required":"false",
+                              "length":"40",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              },
+                              {
+                              "fieldName":"Health Professional?",
+                              "fieldType":"BOOLEAN",
+                              "required":"false",
+                              "length":"",
+                              "format":"",
+                              "defaultValue":"",
+                              "isReadOnly":"false",
+                              "isVisible":"true",
+                              "fieldsetRequired":false
+                              }
+                              ],
+        "ExtraFieldSetFields":[
+                               {
+                               "fieldName":"Status",
+                               "fieldType":"PICKLIST",
+                               "required":"false",
+                               "length":"",
+                               "format":"",
+                               "defaultValue":"",
+                               "isReadOnly":"false",
+                               "isVisible":"true",
+                               "dropdownLOV":[
+                                              {
+                                              "name":"--None--",
+                                              "value":""
+                                              },
+                                              {
+                                              "name":"New",
+                                              "value":"New"
+                                              },
+                                              {
+                                              "name":"Working",
+                                              "value":"Working"
+                                              },
+                                              {
+                                              "name":"Closed",
+                                              "value":"Closed"
+                                              },
+                                              {
+                                              "name":"Reopened",
+                                              "value":"Reopened"
+                                              }
+                                              ]
+                               
+                               }
+                               ]
+    }
+}
