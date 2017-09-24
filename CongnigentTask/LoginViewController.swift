@@ -44,7 +44,10 @@ class LoginViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func gestureIsTapped(_ sender: Any) {
+        
+        view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 

@@ -45,7 +45,7 @@ extension TabbarViewController {
         
         self.navigationController?.isNavigationBarHidden = true
         self.navigationItem.setHidesBackButton(true, animated: false)
-        UITabBar.appearance().barTintColor = UIColor.colorWithHex(0x43BACB)
+        UITabBar.appearance().barTintColor = UIColor.colorWithHex(0x246E98)
        
     
     }

@@ -113,24 +113,24 @@ extension UIColor {
     }
 }
 
-//extension UIActivityIndicatorView {
-//
-//    static func activityIndicatorToView(_ view: UIView) -> UIActivityIndicatorView {
-//
-//        let activityIndicator = UIActivityIndicatorView()
-//        activityIndicator.backgroundColor = UIColor.white
-//        activityIndicator.color = UIColor.colorWithHex(0x3eb1d6)
-//        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(activityIndicator)
-//
-//        AutoLayoutHelper.addHorizontalAlignConstraintToView(activityIndicator, withCenterOffset: 0)
-//        AutoLayoutHelper.addVerticalAlignConstraintToView(activityIndicator, withCenterOffset: 0)
-//        AutoLayoutHelper.addWidthConstraintToView(activityIndicator, value: 60)
-//        AutoLayoutHelper.addHeightConstraintToView(activityIndicator, value: 60)
-//
-//        return activityIndicator
-//    }
-//}
+extension UIActivityIndicatorView {
+
+    static func activityIndicatorToView(_ view: UIView) -> UIActivityIndicatorView {
+
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.backgroundColor = UIColor.white
+        activityIndicator.color = UIColor.colorWithHex(0x3eb1d6)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
+
+        AutoLayoutHelper.addHorizontalAlignConstraintToView(activityIndicator, withCenterOffset: 0)
+        AutoLayoutHelper.addVerticalAlignConstraintToView(activityIndicator, withCenterOffset: 0)
+        AutoLayoutHelper.addWidthConstraintToView(activityIndicator, value: 60)
+        AutoLayoutHelper.addHeightConstraintToView(activityIndicator, value: 60)
+
+        return activityIndicator
+    }
+}
 
 //MARK:- NSDate
 
