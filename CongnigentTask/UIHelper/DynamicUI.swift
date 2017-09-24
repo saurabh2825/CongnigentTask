@@ -10,9 +10,13 @@ import UIKit
 
 class DynamicUI: NSObject {
 
-    static func createUIButton()->UIButton
+    static func createUIButton(title:String)->UIButton
     {
         let button = UIButton()
+        button.backgroundColor = .gray
+        button.setTitle(title, for: .normal)
+        button.setImage(UIImage(named: "dropdown.png"), for: .normal)
+        
         return button
     }
     static func createUILabel()->UILabel

@@ -125,14 +125,42 @@ extension HomeViewController {
         
         
         let dataModel = mainModel.IncidentType
-        let extraFieldSet = dataModel?.callerInfo
-        for index in extraFieldSet!
+        let callerInfo = dataModel?.callerInfo
+        let extraFieldSet = dataModel?.extraFields
+        let intrectionType = dataModel?.interactonTypes
+        
+        for index in intrectionType!
+        {
+            if index.isVisible == "true" {
+                
+                let textField = DynamicUI.createUITextField()
+                textField.placeholder = index.fieldName
+                self.containerView.addSubview(textField)
+                
+                if index.fieldType == "PICKLIST"{
+                    textField.delegate = self
+                }
+                
+                AutoLayoutHelper.addTopSpaceConstraintToView(textField, topSpace: CGFloat(yyPos))
+                AutoLayoutHelper.addHeightConstraintToView(textField, value: 44)
+                AutoLayoutHelper.addLeadingSpaceConstraintToView(textField, leadingSpace:30)
+                AutoLayoutHelper.addTrailingSpaceConstraintToView(textField, trailingSpace: 30)
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                yyPos += 50
+            }
+        }
+        
+        yyPos += 50
+
+        for index in callerInfo!
         {
         if index.isVisible == "true" {
                 let textField = DynamicUI.createUITextField()
                 textField.placeholder = index.fieldName
                 self.containerView.addSubview(textField)
-                
+            if index.fieldType == "PICKLIST"{
+                textField.delegate = self
+            }
                 AutoLayoutHelper.addTopSpaceConstraintToView(textField, topSpace: CGFloat(yyPos))
                 AutoLayoutHelper.addHeightConstraintToView(textField, value: 44)
                 AutoLayoutHelper.addLeadingSpaceConstraintToView(textField, leadingSpace:30)
@@ -142,11 +170,29 @@ extension HomeViewController {
             }
     
         }
+        yyPos += 50
+        for index in extraFieldSet!{
+            if index.isVisible == "true"{
+                
+                let textField = DynamicUI.createUITextField()
+                textField.placeholder = index.fieldName
+                self.containerView.addSubview(textField)
+                if index.fieldType == "PICKLIST"{
+                    textField.delegate = self
+                }
+                AutoLayoutHelper.addTopSpaceConstraintToView(textField, topSpace: CGFloat(yyPos))
+                AutoLayoutHelper.addHeightConstraintToView(textField, value: 44)
+                AutoLayoutHelper.addLeadingSpaceConstraintToView(textField, leadingSpace:30)
+                AutoLayoutHelper.addTrailingSpaceConstraintToView(textField, trailingSpace: 30)
+                textField.translatesAutoresizingMaskIntoConstraints = false
+                yyPos += 50
+            }
+        }
         
         let textField = DynamicUI.createUITextField()
         self.containerView.addSubview(textField)
         AutoLayoutHelper.addTopSpaceConstraintToView(textField, topSpace: CGFloat(yyPos))
-        AutoLayoutHelper.addHeightConstraintToView(textField, value: 44)
+        AutoLayoutHelper.addHeightConstraintToView(textField, value: 0)
         AutoLayoutHelper.addLeadingSpaceConstraintToView(textField, leadingSpace:30)
         AutoLayoutHelper.addTrailingSpaceConstraintToView(textField, trailingSpace: 30)
         AutoLayoutHelper.addBottomSpaceConstraintToView(textField, bottomSpace: 0)
